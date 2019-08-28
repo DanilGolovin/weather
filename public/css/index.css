@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+body {
+    background: url('../img/dark-dawn.jpg') center center no-repeat fixed;
+    background-size: cover;
+    font-family: Arial;
+    color: white;
+}
+
+.main{
+    height: 70vh;
+}
+
+.main h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    padding-top: 100px;
+}
+
+header {
+    height: 20vh;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+header a {
+    padding: 0 40px ;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper p {
+    padding-top: 10px;
+}
+
+form {
+    padding-top: 5vh;
+}
+
+.addAddressContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addAddressContainer button{
+    cursor: pointer;
+    border: 1px solid #ffff33;
+    background-color: #ffff33;
+    padding: 8px;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

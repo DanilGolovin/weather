@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+</head>
+<body>
+{{>header}}
+<div class="main">
+    <h1 class="mainTitle">{{title}}</h1>
+    <div class="formWrapper">
+        <form>
+            <div class="addAddressContainer">
+                <input placeholder="Location" type="address">
+                <button>Search</button>
+            </div>
+                <p id="parLocation"></p>
+                <p id="parForecast"></p>
+
+        </form>
+    </div>
+</div>
+{{>footer}}
+<script src="/js/app.js"></script>
+</body>
+</html>
