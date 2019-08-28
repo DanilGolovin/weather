@@ -5,6 +5,7 @@ const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
 const app = express()
+const port = process.env.PORT || 3000 //порт будет равен первому значению если он будет существовать, и наоборот = 3000
 // определение path для Express config
 const publicDirectoryPath = path.join(__dirname, '../public')// получает каталог просмотров
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -91,6 +92,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Server is up!')
+app.listen(port, () => {
+    console.log('Server is up!' + port)
 })
