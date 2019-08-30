@@ -69,9 +69,9 @@ header {
     content: "";
     height: 3px;
     width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -moz--transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
 }
 .nav-link:hover:after,
 .nav-link:focus:after {
