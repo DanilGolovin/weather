@@ -17,17 +17,34 @@ weatherForm.addEventListener('submit', (e) => { //первыйй аргумен�
                     parLocation.textContent = data.error
                 } else {
                     let elem = document.getElementById("dataContainer")
-                    elem.style.background = "-moz-linear-gradient(left, #f1e767 0%, #feb645 100%)";
-                    elem.style.background = "-webkit-gradient(left top, right top, color-stop(0%, #f1e767), color-stop(100%, #feb645))";
-                    elem.style.background = "-webkit-linear-gradient(left, #f1e767 0%, #feb645 100%)";
-                    elem.style.  background = "-o-linear-gradient(left, #f1e767 0%, #feb645 100%)";
-                    elem.style.  background = "-ms-linear-gradient(left, #f1e767 0%, #feb645 100%)";
-                    elem.style. background = "linear-gradient(to right, #f1e767 0%, #feb645 100%)";
-                    elem.style.filter = "progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 )";
-                    elem.style.width= "18vw";
-                    elem.style.height= "16vh";
-                    elem.style.margin= "0 auto";
-                    elem.style.borderRadius= "10px 10px 10px 10px";
+                    if (window.matchMedia("(min-width: 480px)").matches) {
+                        elem.style.background = "-moz-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.background = "-webkit-gradient(left top, right top, color-stop(0%, #f1e767), color-stop(100%, #feb645))";
+                        elem.style.background = "-webkit-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.  background = "-o-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.  background = "-ms-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style. background = "linear-gradient(to right, #f1e767 0%, #feb645 100%)";
+                        elem.style.filter = "progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 )";
+                        elem.style.width= "18vw";
+                        elem.style.height= "16vh";
+                        elem.style.margin= "0 auto";
+                        elem.style.borderRadius= "10px 10px 10px 10px";
+                    } else {
+                        elem.style.background = "-moz-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.background = "-webkit-gradient(left top, right top, color-stop(0%, #f1e767), color-stop(100%, #feb645))";
+                        elem.style.background = "-webkit-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.  background = "-o-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style.  background = "-ms-linear-gradient(left, #f1e767 0%, #feb645 100%)";
+                        elem.style. background = "linear-gradient(to right, #f1e767 0%, #feb645 100%)";
+                        elem.style.filter = "progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 )";
+                        elem.style.width= "70vw";
+                        elem.style.height= "40vh";
+                        elem.style.margin= "0 auto";
+                        elem.style.borderRadius= "10px 10px 10px 10px";
+
+                    }
+
+
                    parForecast.textContent =  data.forecastData
                    parLocation.textContent =  data.location
                 }

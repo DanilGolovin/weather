@@ -1,22 +1,15 @@
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 input {
     border: 1px solid white;
     padding: 8px;
-}
-
-body {
-    margin: 0;
-}
-
-.someClass {
-    width: 15vw;
-    height: 30vh;
-    background-color: white;
-    color: black;
 }
 
 .scene {
@@ -26,7 +19,7 @@ body {
     bottom: 0;
     left: 0;
     position: fixed;
-    z-index: -1
+    z-index: -1;
 }
 
 .layer {
@@ -85,6 +78,10 @@ header {
     width: 100%;
 }
 
+.nav-link h3 {
+    color: #ffffff;
+}
+
 header a {
     padding: 0 40px ;
 }
@@ -97,11 +94,12 @@ header a {
 
 .formWrapper p {
     padding-top: 10px;
+    text-align: center;
 }
 
 form {
     padding-top: 5vh;
-    width: 20vw;
+    width: 18vw;
 }
 
 .addAddressContainer {
@@ -134,4 +132,34 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .layer-background {
+        background: none
+    }
+    .scene {
+        background: url(../img/dark-dawn.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    .links-wrapper {
+        padding-top: 0;
+    }
+
+    header a {
+        padding: 0 20px;
+    }
+
+    .mainTitle {
+        font-size: 26px;
+        padding-top: 5vh;
+    }
+
+    form {
+        width: 70vw;
+    }
 }

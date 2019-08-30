@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../img/icons8-sun-star-48.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" class="fas fa-sun" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,10 +12,14 @@
     <title>About</title>
 </head>
 <body>
+<div class="scene">
+    <div data-speed = "80" class="layer layer-background"></div>
+</div>
 {{>header}}
-<div class="main" style="">
-    <h1>{{title}}</h1>
+<div class="main">
+    <h1 class="mainTitle">{{title}}</h1>
 </div>
 {{>footer}}
+<script src="/js/parallax.js"></script>
 </body>
 </html>
