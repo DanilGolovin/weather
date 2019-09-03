@@ -133,7 +133,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+#windy {
+    width: 70%;
+    height: 60vh;
+    margin: 10vh auto;
+}
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px)
@@ -147,7 +151,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .links-wrapper {
-        padding-top: 0;
+        padding-top: 5px;
     }
 
     header a {
@@ -162,6 +166,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     form {
         width: 70vw;
     }
+
+
+    #windy {
+        width: 100%;
+        height: 60vh;
+        margin: 10vh auto;
+    }
 }
 
 @media only screen
@@ -169,5 +180,14 @@ and (min-device-width: 480px)
 and (max-device-width: 1000px) {
     form {
         width: 40vw;
+    }
+    .links-wrapper {
+        padding: 20px;
+    }
+
+    #windy {
+        width: 80%;
+        height: 60vh;
+        margin: 5vh auto;
     }
 }
